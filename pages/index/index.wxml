@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class="cityname">
+    <image class="add" src='/images/plus.png'></image>
+    <text>{{theWeather.currentCity}}</text>
+    <image class='menu' src="/images/menu.png"></image>
+  </view>
+  <scroll-view scroll-y="true" class='scroll-box'>
+    <view class="bigtemp">
+      <image src="{{weatherIcon}}.png"></image>
+      <text>{{theWeather.date}}°</text>
+    </view>
+    <view class="weatherText">{{theWeather.weatherDesc}}</view>
+    <view class="today">{{today}}</view>
+    <view class="msg">
+      <view class="msg pm">
+        <image src='/images/PM.png'></image>
+        <text>{{theWeather.pm25}}</text>
+      </view>
+      <view class="msg temp">
+        <image src='/images/termo.png'></image>
+        <text>{{theWeather.temperature}}</text>
+      </view>
+      <view class="msg wind">
+        <image src='/images/wind.png'></image>
+        <text>{{theWeather.wind}}</text>
+      </view>
+    </view>
+    <view class="list">
+      <view class="one">
+        <text>今天{{one}}</text>
+        <image src='/images/w/w00.png'></image>
+        <text class="num">{{onetemp}}</text>
+      </view>
+      <view>
+        <text>{{two}}</text>
+        <image src='/images/w/w00.png'></image>
+        <text class="num">{{twotemp}}</text>
+      </view>
+      <view>
+        <text>{{three}}</text>
+        <image src='/images/w/w00.png'></image>
+        <text class="num">{{threetemp}}</text>
+      </view>
+      <view>
+        <text>{{four}}</text>
+        <image src='/images/w/w00.png'></image>
+        <text class="num">{{fourtemp}}</text>
+      </view>
+    </view>
+    <view class='quality'>
+      <view class="title">空气质量</view>
+      <view class="content">
+        <text>空气质量值 {{theWeather.pm25}}</text>
+        <image src="/images/good.png"></image>
+      </view>
+    </view>
+    </scroll-view>
+</view>
+
+
+<image class="wall" src="{{wallsrc}}.jpg"></image>

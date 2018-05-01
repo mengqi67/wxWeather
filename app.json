@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#7D26CD",
+    "navigationBarTitleText": "微信天气",
+    "navigationBarTextStyle":"light",
+    "enablePullDownRefresh": "true"
+  }
+}
